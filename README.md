@@ -2,22 +2,22 @@
 
 ## Overview
 
-\_Skillz is a demo of an e-Learning platform that allows for the orginazation of online course in anything from cooking, dancing, home-improvement or courses on new technologies. This is a full stack app that utilizes Ruby on Rails and PostgreSQL for the backend and React for the front.
+Skillz is a demo of an e-Learning platform that allows for the orginazation of online course in anything from cooking, dancing, home-improvement or courses on new technologies. This is a full stack app that utilizes Ruby on Rails and PostgreSQL for the backend and React for the front.
 
 <br>
 
 ## MVP
 
-\_The Skillz Minimum Viable Product will be a Full Crud App that allows users to not only view availabe courses but also create, edit and destroy courses with proper authorization. This app has multiple table associations between participants/instructors/ and courses allowing for different user experiences.
+The Skillz Minimum Viable Product will be a Full Crud App that allows users to not only view availabe courses but also create, edit and destroy courses with proper authorization. This app has multiple table associations between participants/instructors/ and courses allowing for different user experiences.
 
 <br>
 
 ### Goals
 
--\_Gain a better understanding and confidence with Ruby on Rails/SQl backend
--\_Fully Responsive Design
--\_Easy to Navigate UX
--\_Very Organized front end architecture
+- Gain a better understanding and confidence with Ruby on Rails/SQl backend
+- Fully Responsive Design
+- Easy to Navigate UX
+- Very Organized front end architecture
 
 <br>
 
@@ -39,29 +39,29 @@
 
 #### Wireframes
 
-![Landing](https://wireframe.cc/8gvMuL)
+[Landing](https://wireframe.cc/8gvMuL)
 
 - Desktop Landing
 
-![Sign-Up](https://wireframe.cc/wnpBB8)
+[Sign-Up](https://wireframe.cc/wnpBB8)
 
 - Sign-Up
 
-  ![Sign-In](https://wireframe.cc/fuOtQf)
+[Sign-In](https://wireframe.cc/fuOtQf)
 
-  -Sign-In
+- Sign-In
 
-![Show Page](https://wireframe.cc/5FhULf)
+[Show Page](https://wireframe.cc/5FhULf)
 
--Show Page
+- Show Page
 
-![Edit/Delete](https://wireframe.cc/1akAod)
+[Edit/Delete](https://wireframe.cc/1akAod)
 
--Edit/Delete Page
+- Edit/Delete Page
 
-![Create Page](https://wireframe.cc/zk3hQR)
+[Create Page](https://wireframe.cc/zk3hQR)
 
--Create/Page
+- Create/Page
 
 #### Component Tree
 
@@ -69,30 +69,31 @@
 
 #### Component Hierarchy
 
+```
 src
-|**components/
-|**Nav
-|**Footer
-|**Layout
-|**Course
-|**CourseCard
-|**containers/
-|**maincontainer
-|**screens/
-|**Landing
-|**Courses
-|**Signup
-|**Signin
-|**CourseDetail
-|**CourseEdit/Delete
-|**services
-|**api-config
-|**auth
-|**courses
-|**teachers
-|\_\_students
-|\_\_App.js
-|\_\_index.js
+|__components/
+    |__Nav
+    |__Footer
+    |__Layout
+    |_Course
+    |__CourseCard
+|__containers/
+    |__maincontainer
+|__screens/
+    |__Landing
+    |__Courses
+    |__Signup
+    |__Signin
+    |__CourseDetail
+    |__CourseEdit/Delete
+|__services
+    |__api-config
+    |__auth
+    |__courses
+    |__teachers
+    |__students
+|__App.js
+|__index.js
 
 #### Time Estimates
 
@@ -115,7 +116,7 @@ src
 
 ### Server
 
-![https://app.diagrams.net/#G1sre_vJmnTvYK5rDYnHogy86Y8x4UpN18]
+[https://app.diagrams.net/#G1sre_vJmnTvYK5rDYnHogy86Y8x4UpN18]
 <br>
 
 ## Post MVP
@@ -125,3 +126,4 @@ Going to add a contact form and do either a table for inventory with Material UI
 ## Code Showcase
 
 ## Code Issues & Resolutions
+```
