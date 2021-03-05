@@ -95,7 +95,9 @@ src
 |__App.js
 |__index.js
 
-#### Time Estimates
+```
+
+### Time Estimates
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
@@ -112,8 +114,6 @@ src
 | Custom Auth screens |    L     |     3 hrs      |      hrs      |     TBD     |
 | TOTAL               |          |     36 hrs     |      hrs      |     TBD     |
 
-<br>
-
 ### Server
 
 [Server ERD](https://app.diagrams.net/#G1sre_vJmnTvYK5rDYnHogy86Y8x4UpN18)
@@ -127,4 +127,3 @@ Going to add a contact form and do either a table for inventory with Material UI
 ## Code Showcase
 
 ## Code Issues & Resolutions
-```
