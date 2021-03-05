@@ -39,27 +39,27 @@
 
 #### Wireframes
 
-![https://wireframe.cc/8gvMuL]
+![Landing](https://wireframe.cc/8gvMuL)
 
 - Desktop Landing
 
-![https://wireframe.cc/wnpBB8]
+![Sign-Up](https://wireframe.cc/wnpBB8)
 
 - Sign-Up
 
-  ![https://wireframe.cc/fuOtQf]
+  ![Sign-In](https://wireframe.cc/fuOtQf)
 
   -Sign-In
 
-![https://wireframe.cc/5FhULf]
+![Show Page](https://wireframe.cc/5FhULf)
 
 -Show Page
 
-![https://wireframe.cc/1akAod]
+![Edit/Delete](https://wireframe.cc/1akAod)
 
 -Edit/Delete Page
 
-![https://wireframe.cc/zk3hQR]
+![Create Page](https://wireframe.cc/zk3hQR)
 
 -Create/Page
 
