@@ -65,7 +65,7 @@ The Skillz Minimum Viable Product will be a Full Crud App that allows users to n
 
 #### Component Tree
 
-![https://whimsical.com/skills-component-hierarchy-6eUJ3M6ssqjv2wGeooVrAg]
+[Component Tree](https://whimsical.com/skills-component-hierarchy-6eUJ3M6ssqjv2wGeooVrAg)
 
 #### Component Hierarchy
 
@@ -116,7 +116,8 @@ src
 
 ### Server
 
-[https://app.diagrams.net/#G1sre_vJmnTvYK5rDYnHogy86Y8x4UpN18]
+[Server ERD](https://app.diagrams.net/#G1sre_vJmnTvYK5rDYnHogy86Y8x4UpN18)
+
 <br>
 
 ## Post MVP
