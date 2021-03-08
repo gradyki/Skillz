@@ -1,13 +1,14 @@
 import './App.css';
 import { Switch, Route } from 'react-router-dom'
 import Layout from './layout/Layout';
+import Login from './screens/Login/Login'
 
 function App() {
   return (
     <Layout>
       <Switch>
         <Route path='/login'>
-          <h3>login</h3>
+          <Login />
         </Route>
         <Route path='/register'>
 
