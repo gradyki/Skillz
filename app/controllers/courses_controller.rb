@@ -5,12 +5,13 @@ class CoursesController < ApplicationController
   def index
     @courses = Course.all
 
-    render json: @courses
+    render json: @courses, include: :topic, status: :ok
+    
   end
 
   # GET /courses/1
   def show
-    render json: @course
+    render json: @course, include: :topic, status: :ok
   end
 
   # POST /courses
