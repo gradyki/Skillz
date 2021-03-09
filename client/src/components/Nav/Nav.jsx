@@ -26,10 +26,13 @@ const {currentUser, handleLogout} =props
             
               </>
             :
-      
+      <div className='login-button'>
             <Link to='/login'>
-              <h3>Login/Register</h3>
+            <Button onClick={handleLogout} variant="contained" color="primary">
+  Login/Register
+              </Button>
             </Link>
+            </div>
         }
       </nav>
     
