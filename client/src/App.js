@@ -3,7 +3,8 @@ import './App.css';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import Layout from './layout/Layout';
 import Login from './screens/Login/Login'
-import { loginUser } from './services/auth';
+import Register from './screens/Register/Register'
+import { loginUser, registerUser } from './services/auth';
 
 
 
@@ -23,6 +24,12 @@ function App() {
     }
   }
 
+  const handleRegister = async (formData) => {
+    const currentUser = await registerUser(formData);
+    setCurrentUser(currentUser)
+    history.push('/')
+  }
+
 
   return (
     <Layout>
@@ -31,7 +38,7 @@ function App() {
           <Login handleLogin={handleLogin}  error={error}/>
         </Route>
         <Route path='/register'>
-<h3>Register</h3>
+          <Register handleRegister={handleRegister}/>
         </Route>
         <Route path='/'>
 
