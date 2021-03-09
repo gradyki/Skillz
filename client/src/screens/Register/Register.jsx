@@ -77,7 +77,7 @@ export default function Register(props) {
       handleRegister(formData);
     }}>
           
-           
+           <div className='username-box'>
               <TextField
                 variant="outlined"
                 required
@@ -89,7 +89,9 @@ export default function Register(props) {
                 value={username}
                 onChange={handleChange}
               />
-            
+          </div>
+          
+          <div className='email-box'>
               <TextField
                 variant="outlined"
                 required
@@ -101,7 +103,9 @@ export default function Register(props) {
             value={email}
                 onChange={handleChange}
               />
-            
+          </div>
+          
+          <div className='password-box'>
               <TextField
                 variant="outlined"
                 required
@@ -114,7 +118,7 @@ export default function Register(props) {
             value={password}
                 onChange={handleChange}
               />
-            
+            </div>
             
              
           <Button

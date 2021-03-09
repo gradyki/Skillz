@@ -21,3 +21,11 @@
 .MuiAvatar-root {
   background-color: var(--tone1);
 }
+
+.username-box {
+  margin-bottom: 10px;
+}
+
+.password-box {
+  margin-top: 10px;
+}
