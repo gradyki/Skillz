@@ -1,0 +1,16 @@
+.makeStyles-avatar-2 {
+  background-color: var(--tone1) !important;
+}
+
+.MuiAvatar-colorDefault {
+  color: var(--tone2) !important;
+}
+
+.makeStyles-avatar-20 .makeStyles-avatar-26 .makeStyles-avatar-18 {
+  background-color: var(--tone1) !important;
+}
+
+.register-link {
+  display: flex;
+  justify-content: center;
+}
