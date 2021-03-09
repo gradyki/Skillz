@@ -1,35 +1,43 @@
+import './CategoryCards.css'
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import coding from '../../assets/Coding.png'
+import cooking from '../../assets/Cooking.jpg'
+import dancing from '../../assets/Dance.jpg'
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+   maxWidth: 300,
   },
   media: {
-    height: 140,
+    height: 350,
   },
 });
+
+
 
 export default function CategoryCards() {
   const classes = useStyles();
 
   return (
-    <div className='category-cards-container'>
-    <h1>Categories</h1>
+    <div className='category-section'>
+      <div className='category-title'>
+      <h1>Categories</h1>
+      </div>
+      <div className='category-cards-container'>
+      <div className='category-tech'>
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
           image={coding}
           title="Contemplative Reptile"
-        />
+            />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Technology Classes
@@ -41,7 +49,55 @@ export default function CategoryCards() {
       </CardActionArea>
       <CardActions>
       </CardActions>
-      </Card>
+        </Card>
       </div>
+      
+      <div className='category-cooking'>
+      <Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+              image={cooking}
+          title="Contemplative Reptile"
+            />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Cooking Classes
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Learn to cook a variety of different foods from cuisines all over the world.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+      </CardActions>
+        </Card>
+      </div>
+
+      <div className='category-dancing'>
+      <Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+              image={dancing}
+          title="Salsa Class"
+            />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Dancing Classes
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Classes for learning different styles and varieties of dances from begginner to expert level
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+      </CardActions>
+        </Card>
+        </div>
+        </div>
+    </div>
+    
+    
   );
 }

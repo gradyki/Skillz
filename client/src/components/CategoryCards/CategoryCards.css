@@ -1,0 +1,15 @@
+.category-title {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 50px 0;
+}
+
+.category-cards-container {
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.MuiCardContent-root {
+  height: 150px;
+}
