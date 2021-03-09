@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import { getAllCourses } from '../services/courses'
 import { getAllTopics } from '../services/topics'
 import Landing from '../screens/Landing/Landing'
+import AllCourses from '../screens/All/AllCourses'
 
 export default function MainContainer() {
   const [courses, setCourses] = useState([])
@@ -12,10 +13,12 @@ export default function MainContainer() {
     const fetchCourses = async () => {
       const coursesList = await getAllCourses()
       setCourses(coursesList)
-
+      console.log('this is courseslist', coursesList)
     }
+  
     fetchCourses()
   }, [])
+
   
   useEffect(() => {
     const fetchTopics = async () => {
@@ -28,12 +31,13 @@ export default function MainContainer() {
 
   return (
     <Switch>
-      <Route path='/'>
+      <Route exact path='/'>
         <Landing />
       </Route>
       <Route path='/courses'>
 
-      </Route>
+        <AllCourses courses={courses}/>
+        </Route>
     </Switch>
   )
 }

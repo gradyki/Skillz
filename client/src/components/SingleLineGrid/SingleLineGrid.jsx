@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
 export default function SingleLineGridList() {
   const classes = useStyles();
 
-  console.log('this is tile img 0 to string',`${ tileData[0].img }`)
+  
 
   return (
     <div className='tile-grid-container'>
