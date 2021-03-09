@@ -1,6 +1,8 @@
 import './Landing.css';
 import logo from '../../assets/logo.jpg'
 import SingleLineGridList from '../../components/SingleLineGrid/SingleLineGrid'
+import CategoryCards from '../../components/CategoryCards/CategoryCards';
+
 
 export default function Landing() {
   return (
@@ -11,10 +13,8 @@ export default function Landing() {
       <div>
        <SingleLineGridList />
       </div>
-      <div>
-        <h1>
-          Category Cards
-        </h1>
+      <div className='Categories'>
+        <CategoryCards />
       </div>
     </div>
   )
