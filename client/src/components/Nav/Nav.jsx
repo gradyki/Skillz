@@ -1,5 +1,6 @@
 import './Nav.css'
 import { Link } from 'react-router-dom'
+import { Button } from '@material-ui/core'
 import navlogo from '../../assets/navlogo.png'
 
 export default function Nav(props) {
@@ -15,9 +16,14 @@ const {currentUser, handleLogout} =props
         </div>
         {
           currentUser ?
-            <>
-              <p>{currentUser.username}</p>
-              <button onClick={handleLogout}>Logout</button>
+          <>
+            <div className='username-logout'>
+            <p>{currentUser.username}</p>
+            <Button onClick={handleLogout} variant="contained" color="primary">
+  Logout
+              </Button>
+              </div>
+            
               </>
             :
       

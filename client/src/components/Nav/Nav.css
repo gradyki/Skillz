@@ -15,4 +15,28 @@
 #nav-logo {
   width: 200px;
   height: 200px;
+  margin-left: 50px;
+}
+
+.username-logout {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 0 75px 0 0;
+}
+
+.username-logout button {
+  margin-bottom: 10px;
+}
+
+.username-logout p {
+  margin-right: 25px;
+  font-weight: 900;
+}
+
+.MuiButton-containedPrimary {
+  color: var(--tone4) !important;
+  background-color: var(--tone2) !important;
+  height: 30px;
+  width: 100px;
 }
