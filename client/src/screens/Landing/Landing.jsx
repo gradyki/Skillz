@@ -1,5 +1,6 @@
 import './Landing.css';
 import logo from '../../assets/logo.jpg'
+import SingleLineGridList from '../../components/SingleLineGrid/SingleLineGrid'
 
 export default function Landing() {
   return (
@@ -8,7 +9,7 @@ export default function Landing() {
        <img src={`${logo}`} />
       </div>
       <div>
-        <h1>Scrolling Images Goes Here</h1>
+       <SingleLineGridList />
       </div>
       <div>
         <h1>

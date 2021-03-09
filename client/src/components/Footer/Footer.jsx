@@ -1,9 +1,11 @@
-import React from 'react'
+import './Footer.css'
 
 export default function Footer() {
   return (
     <footer>
-      <h1>footer goes here</h1>
+      <div className='links-containers'>
+        
+      </div>
     </footer>
   )
 }

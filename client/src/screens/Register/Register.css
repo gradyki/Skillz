@@ -11,6 +11,11 @@
   justify-content: center;
 }
 
-.MuiAvatar-root {
-  background-color: var(--tone1);
+.MuiAvatar-root
+  .MuiAvatar-circle
+  .makeStyles-avatar-root
+  .MuiAvatar-colorDefault
+  .MuiSvgIcon-root
+  .MuiAvatar-fallback {
+  background-color: var(--tone1) !important;
 }

@@ -1,0 +1,7 @@
+footer {
+  display: flex;
+  background-color: var(--tone1);
+  height: 12.5vh;
+  width: 100vw;
+  margin-top: 80px;
+}
