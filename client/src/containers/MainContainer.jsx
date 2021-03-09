@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { getAllCourses } from '../services/courses'
 import { getAllTopics } from '../services/topics'
+import Landing from '../screens/Landing/Landing'
 
 export default function MainContainer() {
   const [courses, setCourses] = useState([])
@@ -28,7 +29,7 @@ export default function MainContainer() {
   return (
     <Switch>
       <Route path='/'>
-        
+        <Landing />
       </Route>
       <Route path='/courses'>
 

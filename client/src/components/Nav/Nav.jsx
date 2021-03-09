@@ -1,14 +1,18 @@
-import React from 'react'
+import './Nav.css'
 import { Link } from 'react-router-dom'
-
+import navlogo from '../../assets/navlogo.png'
 
 export default function Nav(props) {
 const {currentUser, handleLogout} =props
 
   return (
-    <div>
-      <nav>
-        <h1>Logo goes here</h1>
+   
+      <nav className='nav'>
+      <div className='imgage-container'>
+        <Link to='/'>
+          <img id='nav-logo' src={`${navlogo}`} />
+          </Link>
+        </div>
         {
           currentUser ?
             <>
@@ -22,7 +26,7 @@ const {currentUser, handleLogout} =props
             </Link>
         }
       </nav>
-    </div>
+    
   )
 }
 

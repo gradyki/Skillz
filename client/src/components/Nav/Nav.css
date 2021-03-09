@@ -1,0 +1,18 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--tone1);
+  height: 12.5vh;
+  width: 100vw;
+}
+
+.imgage-container {
+  display: flex;
+  justify-content: center;
+  margin: -50px 0 0 15px;
+}
+
+#nav-logo {
+  width: 200px;
+  height: 200px;
+}
