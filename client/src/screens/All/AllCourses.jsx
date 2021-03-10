@@ -138,7 +138,6 @@ const useStyles = makeStyles({
 export default function AllCards(props) {
   const classes = useStyles();
   const { courses } = props
-  console.log('this is courses all cards', courses[0].id)
   return (
     <div className='all-page-container'>
       <div className='title-container'>
