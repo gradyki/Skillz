@@ -69,7 +69,7 @@ export default function MainContainer(props) {
         />
       </Route>
       <Route path="/courses/:id/edit">
-        <CourseEdit courses={courses} handleUpdate={handleUpdate} />
+        <CourseEdit courses={courses} handleUpdate={handleUpdate} topics={topics}/>
       </Route>
 
       <Route path="/courses/:id">

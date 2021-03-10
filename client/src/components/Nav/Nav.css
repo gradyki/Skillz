@@ -4,6 +4,7 @@
   background-color: var(--tone1);
   height: 12.5vh;
   width: 100vw;
+  border-bottom: 3px solid var(--tone6);
 }
 
 .imgage-container {

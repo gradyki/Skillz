@@ -12,7 +12,10 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     justifyContent: 'space-around',
     overflow: 'hidden',
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: 'white',
+    
+    
+    
   },
   gridList: {
     flexWrap: 'nowrap',
@@ -20,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     transform: 'translateZ(0)',
   },
   title: {
-    color: theme.palette.primary.light,
+    color: 'white',
   },
   titleBar: {
     background:
@@ -39,7 +42,7 @@ export default function SingleLineGridList() {
     <div className={classes.root}>
       <GridList className={classes.gridList} cols={2.5}>
         {tileData.map((tile) => (
-          <GridListTile key={tile.img}>
+          <GridListTile key={tile.img} >
             <img src={tile.img} alt={tile.title} />
             <GridListTileBar
               title={tile.title}

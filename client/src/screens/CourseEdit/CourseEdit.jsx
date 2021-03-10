@@ -23,7 +23,7 @@ export default function CourseEdit(props) {
         info: courseItem.info,
         price: courseItem.price,
         img_url: courseItem.img_url,
-        topic_id: courseItem.topic.category
+        topic_id: courseItem.topic_id
         
 
       });
@@ -87,10 +87,16 @@ export default function CourseEdit(props) {
     </label>
       <br />
 
-      <select defaultValue={topic_id} onChange={handleChange} name='topic_id'>
-        <option value='Dancing'>Dancing</option>
-        <option value='Singing'>Singing</option>
-        <option value='Cooking'>Cooking</option>
+      <select onChange={handleChange} name='topic_id'>
+      {topics?.map((topic) => {
+          return (
+            <option key={topic.id} value={topic.id}
+            selected={topic.id === topic_id}>
+              {topic.category}
+            </option>
+          );
+        })}
+        
 
       </select>
       
