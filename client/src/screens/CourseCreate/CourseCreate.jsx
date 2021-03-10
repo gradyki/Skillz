@@ -9,6 +9,7 @@ export default function FoodCreate(props) {
     info: "",
     price: null,
     img_url: "",
+    topic_id: "",
   });
   const { title, info, price, img_url } = formData;
   const { handleCreate, topics, courses } = props;
@@ -59,14 +60,14 @@ export default function FoodCreate(props) {
         />
       </label>
 
-      <select defaultValue="default" onchange={handleChange}>
+      <select defaultValue="default" onChange={handleChange} name="topic_id">
         <option value="default" disabled>
           -- dummy --value
         </option>
 
         {topics.map((topic) => {
           return (
-            <option key={topic.id} value={topic.category}>
+            <option key={topic.id} value={topic.id}>
               {topic.category}
             </option>
           );
