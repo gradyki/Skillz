@@ -12,7 +12,7 @@ export default function FoodCreate(props) {
     topic_id: "",
   });
   const { title, info, price, img_url } = formData;
-  const { handleCreate, topics, courses } = props;
+  const { handleCreate, topics } = props;
 
   const handleChange = (e) => {
     const { name, value } = e.target;

@@ -28,7 +28,7 @@ class CoursesController < ApplicationController
 
   # PATCH/PUT /courses/1
   def update
-    @course = @current_user.courses.find(params[:id])
+    @course = Course.find(params[:id])
     if @course.update(course_params)
       render json: @course
     else
