@@ -1,0 +1,9 @@
+.course-detail-container {
+  display: flex;
+  justify-content: center;
+  margin: 5% 0 5% 0;
+}
+
+.MuiTypography-root {
+  font-size: 1rem !important;
+}
