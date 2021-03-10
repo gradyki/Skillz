@@ -38,7 +38,7 @@ class CoursesController < ApplicationController
 
   # DELETE /courses/1
   def destroy
-    @course = @current_user.courses.find(params[:id])
+    @course = Course.find(params[:id])
     @course.destroy
   end
 
