@@ -4,6 +4,7 @@ import { getAllCourses } from '../services/courses'
 import { getAllTopics } from '../services/topics'
 import Landing from '../screens/Landing/Landing'
 import AllCourses from '../screens/All/AllCourses'
+import CourseDetail from '../screens/CourseDetail/CourseDetail'
 
 export default function MainContainer() {
   const [courses, setCourses] = useState([])
@@ -13,7 +14,7 @@ export default function MainContainer() {
     const fetchCourses = async () => {
       const coursesList = await getAllCourses()
       setCourses(coursesList)
-      console.log('this is courseslist', coursesList)
+      
     }
   
     fetchCourses()
@@ -31,13 +32,17 @@ export default function MainContainer() {
 
   return (
     <Switch>
+      
+      <Route path='/courses/:id'>
+<CourseDetail />
+      </Route>
+      <Route path='/courses'>
+        <AllCourses courses={courses}/>
+      </Route>
+
       <Route exact path='/'>
         <Landing />
       </Route>
-      <Route path='/courses'>
-
-        <AllCourses courses={courses}/>
-        </Route>
     </Switch>
   )
 }

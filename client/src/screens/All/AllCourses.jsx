@@ -162,10 +162,12 @@ export default function AllCards(props) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
+          <CardActions>
+            <Link to= {`/courses/${course.id}`}>
         <Button size="small" color="primary">
-          Learn More
+                Learn More
         </Button>
+        </Link>
       </CardActions>
         </Card>
         </div>)
