@@ -12,7 +12,14 @@ const {currentUser, handleLogout} =props
       <div className='imgage-container'>
         <Link to='/'>
           <img id='nav-logo' src={`${navlogo}`} />
-          </Link>
+        </Link>
+       
+        <div className='all-link'>
+        <Link to='/courses'>
+            <h1>All</h1>
+            </Link>
+          </div>
+          
         </div>
         {
           currentUser ?

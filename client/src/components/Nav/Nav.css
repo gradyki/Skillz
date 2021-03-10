@@ -49,3 +49,9 @@
 .login-button button {
   width: 200px;
 }
+
+.all-link {
+  display: flex;
+  justify-content: center;
+  margin: 75px 0 0 400px;
+}
