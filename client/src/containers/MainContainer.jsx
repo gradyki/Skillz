@@ -41,7 +41,7 @@ export default function MainContainer() {
   return (
     <Switch>
        <Route path='/courses/new'>
-        <CourseCreate handleCreate={handleCreate} />
+        <CourseCreate handleCreate={handleCreate} topics={topics} courses={courses}/>
       </Route>
       
       <Route path='/courses/:id'>
