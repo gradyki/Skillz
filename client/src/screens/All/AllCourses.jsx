@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     transform: 'rotate(180deg)',
   },
   avatar: {
-    backgroundColor: red[500],
+    backgroundColor: '#1a2d68',
   },
 }));
 
@@ -48,20 +48,17 @@ export default function AllCourses(props) {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-// //{images.map(image => <div key={image.id} className='image-container'>
-// <Link to={`/adventures/${image.address}`}> 
-// <img src={image.url} id='carousel-imgs' />
-// <div className='image-text'>{image.textLocation}
-//   <br>
-//   </br><i class="fa fa-rub" aria-hidden="true"></i>{image.textPrice}</div>
-// </Link>    
-// </div>)}
+
   return (
     
     
     
-    <div className = 'all-page-container'>
-      {courses.map(course => <div key={course.id} className='all-page-container'><Card className={classes.root}>
+    <div className='all-page-container'>
+      <div className='allcourses-title'>
+        <h1>All Courses</h1>
+      </div>
+      <div className='cards-container'>
+      {courses.map(course => <div key={course.id} className='all-page-cards'><Card className={classes.root}>
         <CardHeader
           avatar={
             <Avatar aria-label="recipe" className={classes.avatar}>
@@ -117,7 +114,8 @@ export default function AllCourses(props) {
         </Collapse>
       </Card>
       </div>)
-      }
+        }
+        </div>
       </div>
   );
 }
