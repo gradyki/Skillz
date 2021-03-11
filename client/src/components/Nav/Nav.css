@@ -51,8 +51,12 @@
   width: 200px;
 }
 
-.all-link {
+.nav-links {
   display: flex;
-  justify-content: center;
-  margin: 75px 0 0 400px;
+  align-items: flex-end;
+  margin: 0 25px 15px 0;
+}
+
+.nav-links button {
+  background-color: var(--tone2);
 }

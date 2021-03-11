@@ -2,6 +2,7 @@ import "./Nav.css";
 import { Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
 import navlogo from "../../assets/navlogo.png";
+import NavButtons from "../NavButtons/NavButtons";
 
 export default function Nav(props) {
   const { currentUser, handleLogout } = props;
@@ -12,26 +13,10 @@ export default function Nav(props) {
         <Link to="/">
           <img id="nav-logo" src={`${navlogo}`} alt="landing" />
         </Link>
-
-        <div className="all-link">
-          <Link to="/courses">
-            <h1>All</h1>
-          </Link>
-        </div>
       </div>
       {currentUser ? (
         <>
-          <div className="username-logout">
-            {/* <p>{currentUser.username}</p> */}
-            <Link to="/courses/new">
-              <Button variant="contained" color="primary">
-                Add Course
-              </Button>
-            </Link>
-            <Button onClick={handleLogout} variant="contained" color="primary">
-              Logout
-            </Button>
-          </div>
+          <NavButtons handleLogout={handleLogout} />
         </>
       ) : (
         <div className="login-button">

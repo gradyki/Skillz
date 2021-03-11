@@ -6,3 +6,7 @@
   --tone5: #f0fdfc;
   --tone6: #474a62;
 }
+
+a {
+  text-decoration: none;
+}
