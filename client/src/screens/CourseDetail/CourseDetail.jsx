@@ -69,67 +69,69 @@ export default function CourseDetail(props) {
 
   return (
     <div className="course-detail-container">
-      <Card className={classes.root}>
-        <CardHeader
-          avatar={
-            <Avatar aria-label="recipe" className={classes.avatar}>
-              {courseItem.topic.category.charAt(0)}
-            </Avatar>
-          }
-          action={
-            <IconButton aria-label="settings">
-              <MoreVertIcon />
-            </IconButton>
-          }
-          title={courseItem.topic.category}
-          subheader="September 14, 2016"
-        />
-        <CardMedia className={classes.media} image={courseItem.img_url} />
-        <CardContent>
-          <Typography variant="body2" color="textSecondary" component="h2">
-            {courseItem.title}
-          </Typography>
-        </CardContent>
-        <CardActions disableSpacing>
-          <h3>Additional Info</h3>
-          <IconButton
-            className={clsx(classes.expand, {
-              [classes.expandOpen]: expanded,
-            })}
-            onClick={handleExpandClick}
-            aria-expanded={expanded}
-            aria-label="show more"
-          >
-            <ExpandMoreIcon />
-          </IconButton>
-        </CardActions>
-        <Collapse in={expanded} timeout="auto" unmountOnExit>
+      <div className="card-container">
+        <Card className={classes.root}>
+          <CardHeader
+            avatar={
+              <Avatar aria-label="recipe" className={classes.avatar}>
+                {courseItem.topic.category.charAt(0)}
+              </Avatar>
+            }
+            action={
+              <IconButton aria-label="settings">
+                <MoreVertIcon />
+              </IconButton>
+            }
+            title={courseItem.topic.category}
+            subheader="September 14, 2016"
+          />
+          <CardMedia className={classes.media} image={courseItem.img_url} />
           <CardContent>
-            <Typography paragraph>Details:</Typography>
-            <Typography paragraph>
-              Heat 1/2 cup of the broth in a pot until simmering, add saffron
-              and set aside for 10 minutes.
+            <Typography variant="body2" color="textSecondary" component="p">
+              <span id="title">{courseItem.title}</span>
+              <br />
+              {`${courseItem.info}`}
             </Typography>
           </CardContent>
-        </Collapse>
-      </Card>
-      <div>
-        <div>
-          {currentUser && (
-            <div className="buttons-container">
-              <div className="delete">
-                <button onClick={() => handleDelete(courseItem.id)}>
-                  delete
-                </button>
-              </div>
-              <div className="edit">
-                <Link to={`/courses/${courseItem.id}/edit`}>
-                  <button>Edit</button>
-                </Link>
-              </div>
+          {/* <CardContent>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {`${courseItem.info}`}
+          </Typography>
+        </CardContent> */}
+          <CardActions disableSpacing>
+            <h3>Additional Info</h3>
+            <IconButton
+              className={clsx(classes.expand, {
+                [classes.expandOpen]: expanded,
+              })}
+              onClick={handleExpandClick}
+              aria-expanded={expanded}
+              aria-label="show more"
+            >
+              <ExpandMoreIcon />
+            </IconButton>
+          </CardActions>
+          <Collapse in={expanded} timeout="auto" unmountOnExit>
+            <CardContent>
+              <Typography paragraph>Price: ${`${courseItem.price}`}</Typography>
+            </CardContent>
+          </Collapse>
+        </Card>
+
+        {currentUser && (
+          <div className="buttons-container">
+            <div className="edit">
+              <Link to={`/courses/${courseItem.id}/edit`}>
+                <button>Edit</button>
+              </Link>
             </div>
-          )}
-        </div>
+            <div className="delete">
+              <button onClick={() => handleDelete(courseItem.id)}>
+                delete
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
