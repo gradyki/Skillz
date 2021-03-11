@@ -57,50 +57,60 @@ export default function CategoryCards() {
             </Card>
           </div>
         </Link>
-
-        <div className="category-cooking">
-          <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image={cooking}
-                title="Contemplative Reptile"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  Cooking
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  Learn to cook a variety of different foods from cuisines all
-                  over the world.
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions></CardActions>
-          </Card>
-        </div>
-
-        <div className="category-dancing">
-          <Card className={classes.root}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image={dancing}
-                title="Salsa Class"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  Dancing
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                  Classes for learning different styles and varieties of dances
-                  from begginner to expert level
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions></CardActions>
-          </Card>
-        </div>
+        <Link to="/cooking">
+          <div className="category-cooking">
+            <Card className={classes.root}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image={cooking}
+                  title="Contemplative Reptile"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Cooking
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    Learn to cook a variety of different foods from cuisines all
+                    over the world.
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions></CardActions>
+            </Card>
+          </div>
+        </Link>
+        <Link to="/dancing">
+          <div className="category-dancing">
+            <Card className={classes.root}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image={dancing}
+                  title="Salsa Class"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Dancing
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    Classes for learning different styles and varieties of
+                    dances from begginner to expert level
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions></CardActions>
+            </Card>
+          </div>
+        </Link>
       </div>
     </div>
   );

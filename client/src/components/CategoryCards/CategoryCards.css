@@ -10,6 +10,10 @@
   justify-content: space-between;
 }
 
+.category-cards-container a {
+  text-decoration: none;
+}
+
 .MuiCardContent-root {
   height: 150px;
 }

@@ -55,7 +55,6 @@ export default function CourseEdit(props) {
     };
     if (courses.length) {
       prefillFormData();
-      console.log("formData", formData);
     }
   }, [courses, id]);
 

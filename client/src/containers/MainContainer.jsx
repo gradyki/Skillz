@@ -13,6 +13,8 @@ import CourseDetail from "../screens/CourseDetail/CourseDetail";
 import CourseCreate from "../screens/CourseCreate/CourseCreate";
 import CourseEdit from "../screens/CourseEdit/CourseEdit";
 import TechClasses from "../screens/TechClasses/TechClasses";
+import DancingClasses from "../screens/DancingClasses/DancingClasses";
+import CookingClasses from "../screens/CookingClasses/CookingClasses";
 
 export default function MainContainer(props) {
   const [courses, setCourses] = useState([]);
@@ -90,9 +92,13 @@ export default function MainContainer(props) {
       <Route path="/tech">
         <TechClasses courses={courses} />
       </Route>
-      <Route path="/courses/cooking"></Route>
+      <Route path="/cooking">
+        <CookingClasses courses={courses} />
+      </Route>
 
-      <Route path="/courses/dancing"></Route>
+      <Route path="/dancing">
+        <DancingClasses courses={courses} />
+      </Route>
 
       <Route exact path="/">
         <Landing />

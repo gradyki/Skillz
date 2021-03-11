@@ -10,7 +10,7 @@ export default function Nav(props) {
     <nav className="nav">
       <div className="imgage-container">
         <Link to="/">
-          <img id="nav-logo" src={`${navlogo}`} />
+          <img id="nav-logo" src={`${navlogo}`} alt="landing" />
         </Link>
 
         <div className="all-link">

@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
   media: {
     height: 0,
-    paddingTop: "56.25%", // 16:9
+    paddingTop: "56.25%",
   },
   expand: {
     transform: "rotate(0deg)",
@@ -52,14 +52,11 @@ export default function CourseDetail(props) {
   const { id } = useParams();
   const { currentUser, handleDelete } = props;
 
-  console.log("coursecreate props", props);
-
   useEffect(() => {
     const fetchCourseItem = async () => {
       const courseData = await getOneCourse(id);
       setCourseItem(courseData);
       setLoaded(true);
-      console.log("this is courseData", courseData);
     };
     fetchCourseItem();
   }, [id]);
