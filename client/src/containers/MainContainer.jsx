@@ -12,6 +12,7 @@ import AllCourses from "../screens/All/AllCourses";
 import CourseDetail from "../screens/CourseDetail/CourseDetail";
 import CourseCreate from "../screens/CourseCreate/CourseCreate";
 import CourseEdit from "../screens/CourseEdit/CourseEdit";
+import TechClasses from "../screens/TechClasses/TechClasses";
 
 export default function MainContainer(props) {
   const [courses, setCourses] = useState([]);
@@ -69,15 +70,29 @@ export default function MainContainer(props) {
         />
       </Route>
       <Route path="/courses/:id/edit">
-        <CourseEdit courses={courses} handleUpdate={handleUpdate} topics={topics}/>
+        <CourseEdit
+          courses={courses}
+          handleUpdate={handleUpdate}
+          topics={topics}
+        />
       </Route>
 
       <Route path="/courses/:id">
-        <CourseDetail currentUser={currentUser} handleDelete={handleDelete} topics={topics}/>
+        <CourseDetail
+          currentUser={currentUser}
+          handleDelete={handleDelete}
+          topics={topics}
+        />
       </Route>
       <Route path="/courses">
         <AllCourses courses={courses} />
       </Route>
+      <Route path="/tech">
+        <TechClasses courses={courses} />
+      </Route>
+      <Route path="/courses/cooking"></Route>
+
+      <Route path="/courses/dancing"></Route>
 
       <Route exact path="/">
         <Landing />
