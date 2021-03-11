@@ -29,7 +29,7 @@ export default function TechClasses(props) {
   return (
     <div className="all-page-container">
       <div className="title-container">
-        <h1>All Categories</h1>
+        <h1>Tech Classes</h1>
       </div>
       <div className="cards-container">
         {techCourses.map((course) => (
