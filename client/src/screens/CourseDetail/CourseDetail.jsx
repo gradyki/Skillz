@@ -1,6 +1,6 @@
 import "./CourseDetail.css";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { getOneCourse } from "../../services/courses";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
@@ -116,7 +116,18 @@ export default function CourseDetail(props) {
       <div>
         <div>
           {currentUser && (
-            <button onClick={() => handleDelete(courseItem.id)}>delete</button>
+            <div className="buttons-container">
+              <div className="delete">
+                <button onClick={() => handleDelete(courseItem.id)}>
+                  delete
+                </button>
+              </div>
+              <div className="edit">
+                <Link to={`/courses/${courseItem.id}/edit`}>
+                  <button>Edit</button>
+                </Link>
+              </div>
+            </div>
           )}
         </div>
       </div>
