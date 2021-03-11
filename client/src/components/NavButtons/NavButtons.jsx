@@ -107,6 +107,9 @@ export default function NavButtons(props) {
         <Link to="/dancing">
           <MenuItem onClick={handleClose}>Dancing</MenuItem>
         </Link>
+        <Link to="/courses/new">
+          <MenuItem onClick={handleClose}>Add Course</MenuItem>
+        </Link>
         <MenuItem onClick={handleLogout}>Logout</MenuItem>
       </Menu>
     </div>
