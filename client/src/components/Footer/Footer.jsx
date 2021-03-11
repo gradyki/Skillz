@@ -6,7 +6,7 @@ export default function Footer() {
     <footer>
       <div className="links-containers">
         <a href="https://github.com/gradyki">
-          <img src={`${github}`} />
+          <img src={`${github}`} alt="github" />
         </a>
       </div>
     </footer>
