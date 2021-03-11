@@ -135,44 +135,6 @@ export default function CourseEdit(props) {
             autoFocus
           />
 
-          {/* <label>
-            Title:
-            <input
-              type="text"
-              name="title"
-              value={title}
-              onChange={handleChange}
-            />
-          </label>
-          <label>
-            Info:
-            <input
-              type="text"
-              name="info"
-              value={info}
-              onChange={handleChange}
-            />
-          </label>
-          <label>
-            Image:
-            <input
-              type="text"
-              name="img_url"
-              value={img_url}
-              onChange={handleChange}
-            />
-          </label>
-          <label>
-            :
-            <input
-              type="number"
-              name="price"
-              value={price}
-              onChange={handleChange}
-            />
-          </label>
-          <br /> */}
-
           <select id="select" onChange={handleChange} name="topic_id">
             {topics?.map((topic) => {
               return (

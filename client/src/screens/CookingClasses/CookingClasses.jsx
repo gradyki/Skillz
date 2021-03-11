@@ -26,8 +26,6 @@ export default function TechClasses(props) {
     (course) => course.topic.category === "Cooking"
   );
 
-  console.log(courses)
-
   return (
     <div className="all-page-container">
       <div className="title-container">

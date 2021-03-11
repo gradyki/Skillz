@@ -1,67 +1,5 @@
 import "./NavButtons.css";
-// import Button from "@material-ui/core/Button";
-// import ButtonGroup from "@material-ui/core/ButtonGroup";
-// import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
-
-// const useStyles = makeStyles((theme) => ({
-//   root: {
-//     display: "flex",
-//     flexDirection: "column",
-//     alignItems: "center",
-//     "& > *": {
-//       margin: theme.spacing(1),
-//     },
-//   },
-// }));
-
-// export default function BasicButtonGroup(props) {
-//   const classes = useStyles();
-//   const { handleLogout } = props;
-
-//   return (
-//     <div className="nav-buttons">
-//       <div className={classes.root}>
-//         <ButtonGroup
-//           variant="contained"
-//           color="primary"
-//           aria-label="contained primary button group"
-//         >
-//           <Link to="/courses">
-//             <Button>All</Button>
-//           </Link>
-//           <Link to="/courses/new">
-//             <Button>Add</Button>
-//           </Link>
-//           <Button onClick={handleLogout}>Logout</Button>
-//         </ButtonGroup>
-//       </div>
-//     </div>
-//   );
-// }
-
-// import React from "react";
-
-// export default function NavButtons(props) {
-//   const { handleLogout } = props;
-//   return (
-//     <div className="nav-links">
-//       <Link to="/courses">
-//         <div className="all-button">
-//           <button>All</button>
-//         </div>
-//       </Link>
-//       <Link to="/courses/new">
-//         <div className="add-button">
-//           <button>Add</button>
-//         </div>
-//       </Link>
-//       <div className="logout-button">
-//         <button onClick={handleLogout}>Logout</button>
-//       </div>
-//     </div>
-//   );
-// }
 import { useState } from "react";
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
@@ -146,10 +84,6 @@ export default function NavButtons(props) {
           <Link to="/dancing">
             <MenuItem onClick={handleClose}>Dancing</MenuItem>
           </Link>
-          {/* <Link to="/courses/new">
-          <MenuItem onClick={handleClose}>Add Course</MenuItem>
-        </Link> */}
-          {/* <MenuItem onClick={handleLogout}>Logout</MenuItem> */}
         </Menu>
       )}
     </div>

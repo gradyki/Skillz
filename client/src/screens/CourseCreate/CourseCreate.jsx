@@ -116,36 +116,6 @@ export default function FoodCreate(props) {
             autoFocus
           />
 
-          {/* <label>
-        Title:
-        <input type="text" name="title" value={title} onChange={handleChange} />
-      </label> */}
-          {/* <br />
-      <label>
-        info:
-        <input type="text" name="info" value={info} onChange={handleChange} />
-      </label>
-      <br />
-      <label>
-        Image:
-        <input
-          type="text"
-          name="img_url"
-          value={img_url}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <label>
-        price:
-        <input
-          type="number"
-          name="price"
-          value={price}
-          onChange={handleChange}
-        />
-      </label> */}
-
           <select
             id="select"
             defaultValue="default"
@@ -173,7 +143,6 @@ export default function FoodCreate(props) {
           >
             Submit
           </Button>
-          {/* <button>Submit</button> */}
         </form>
       </div>
     </Container>
