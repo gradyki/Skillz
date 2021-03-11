@@ -1,28 +1,26 @@
 import "./CourseCreate.css";
 import { useState } from "react";
-import { getAllCourses } from "../../services/courses";
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import Button from '@material-ui/core/Button';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import TextField from '@material-ui/core/TextField';
-import Avatar from '@material-ui/core/Avatar';
-
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
+import Container from "@material-ui/core/Container";
+import Button from "@material-ui/core/Button";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import TextField from "@material-ui/core/TextField";
+import Avatar from "@material-ui/core/Avatar";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
     marginTop: theme.spacing(8),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
   avatar: {
     margin: theme.spacing(1),
-    backgroundColor: '#3cb1de'
+    backgroundColor: "#3cb1de",
   },
   form: {
-    width: '100%', 
+    width: "100%",
     marginTop: theme.spacing(1),
   },
   submit: {
@@ -52,23 +50,20 @@ export default function FoodCreate(props) {
   const classes = useStyles();
 
   return (
-
-<Container component="main" maxWidth="xs">
-    <CssBaseline />
-    <div className={classes.paper}>
-      <Avatar className={classes.avatar}>
-       
-      </Avatar>
-      <Typography component="h1" variant="h5">
-        Create Course
-      </Typography>
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        handleCreate(formData);
-      }}
-    >
-    <TextField
+    <Container component="main" maxWidth="xs">
+      <CssBaseline />
+      <div className={classes.paper}>
+        <Avatar className={classes.avatar}></Avatar>
+        <Typography component="h1" variant="h5">
+          Create Course
+        </Typography>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            handleCreate(formData);
+          }}
+        >
+          <TextField
             variant="outlined"
             margin="normal"
             required
@@ -120,12 +115,12 @@ export default function FoodCreate(props) {
             onChange={handleChange}
             autoFocus
           />
-          
-      {/* <label>
+
+          {/* <label>
         Title:
         <input type="text" name="title" value={title} onChange={handleChange} />
       </label> */}
-      {/* <br />
+          {/* <br />
       <label>
         info:
         <input type="text" name="info" value={info} onChange={handleChange} />
@@ -151,18 +146,23 @@ export default function FoodCreate(props) {
         />
       </label> */}
 
-      <select id='select' defaultValue="default" onChange={handleChange} name="topic_id">
-        <option value="default" disabled>
-          ------ Select Category ------
-        </option>
-
-        {topics.map((topic) => {
-          return (
-            <option key={topic.id} value={topic.id}>
-              {topic.category}
+          <select
+            id="select"
+            defaultValue="default"
+            onChange={handleChange}
+            name="topic_id"
+          >
+            <option value="default" disabled>
+              ------ Select Category ------
             </option>
-          );
-        })}
+
+            {topics.map((topic) => {
+              return (
+                <option key={topic.id} value={topic.id}>
+                  {topic.category}
+                </option>
+              );
+            })}
           </select>
           <Button
             type="submit"
@@ -171,11 +171,11 @@ export default function FoodCreate(props) {
             color="primary"
             className={classes.submit}
           >
-          Submit
+            Submit
           </Button>
-      {/* <button>Submit</button> */}
+          {/* <button>Submit</button> */}
         </form>
-        </div>
-      </Container>
+      </div>
+    </Container>
   );
 }

@@ -4,6 +4,7 @@ import { useParams, Link } from "react-router-dom";
 import { getOneCourse } from "../../services/courses";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
+import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -36,6 +37,10 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     backgroundColor: "#1a2d68",
+  },
+  submit: {
+    margin: theme.spacing(3, 0, 2),
+    width: 50,
   },
 }));
 
@@ -122,13 +127,28 @@ export default function CourseDetail(props) {
           <div className="buttons-container">
             <div className="edit">
               <Link to={`/courses/${courseItem.id}/edit`}>
-                <button>Edit</button>
+                <Button
+                  type="submit"
+                  fullWidth
+                  variant="contained"
+                  color="primary"
+                  className={classes.submit}
+                >
+                  Edit
+                </Button>
               </Link>
             </div>
             <div className="delete">
-              <button onClick={() => handleDelete(courseItem.id)}>
-                delete
-              </button>
+              <Button
+                onClick={() => handleDelete(courseItem.id)}
+                type="submit"
+                fullWidth
+                variant="contained"
+                color="primary"
+                className={classes.submit}
+              >
+                Delete
+              </Button>
             </div>
           </div>
         )}
