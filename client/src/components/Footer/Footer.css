@@ -5,4 +5,9 @@ footer {
   width: 100vw;
   margin-top: 80px;
   border-top: 3px solid var(--tone6);
+  justify-content: center;
+}
+
+.links-containers {
+  margin-top: 20px;
 }

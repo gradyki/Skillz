@@ -17,3 +17,9 @@
 .MuiCardContent-root {
   height: 150px;
 }
+
+.category-title {
+  font-family: "Roboto";
+  text-shadow: 2px 1px var(--tone1);
+  font-weight: 900;
+}
