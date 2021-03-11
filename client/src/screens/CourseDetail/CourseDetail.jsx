@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { getOneCourse } from "../../services/courses";
 import { makeStyles } from "@material-ui/core/styles";
+import { dateConverter } from "../../services/helpers";
 import clsx from "clsx";
 import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
@@ -84,7 +85,7 @@ export default function CourseDetail(props) {
               </IconButton>
             }
             title={courseItem.topic.category}
-            subheader="September 14, 2016"
+            subheader={`$${courseItem.price}`}
           />
           <CardMedia className={classes.media} image={courseItem.img_url} />
           <CardContent>
@@ -114,7 +115,12 @@ export default function CourseDetail(props) {
           </CardActions>
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
-              <Typography paragraph>Price: ${`${courseItem.price}`}</Typography>
+              <Typography paragraph>
+                Created On: {dateConverter(courseItem.created_at)}
+              </Typography>
+              <Typography paragraph>
+                Updated On: {dateConverter(courseItem.updated_at)}
+              </Typography>
             </CardContent>
           </Collapse>
         </Card>
