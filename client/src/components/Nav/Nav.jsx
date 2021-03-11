@@ -14,9 +14,11 @@ export default function Nav(props) {
           <img id="nav-logo" src={`${navlogo}`} alt="landing" />
         </Link>
       </div>
-      {currentUser ? (
+
+      <NavButtons handleLogout={handleLogout} currentUser={currentUser} />
+      {/* {currentUser ? (
         <>
-          <NavButtons handleLogout={handleLogout} />
+          <NavButtons handleLogout={handleLogout} currentUser={currentUser} />
         </>
       ) : (
         <div className="login-button">
@@ -26,7 +28,7 @@ export default function Nav(props) {
             </Button>
           </Link>
         </div>
-      )}
+      )} */}
     </nav>
   );
 }
