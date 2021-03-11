@@ -13,3 +13,7 @@
 .all-page-cards {
   margin: 25px;
 }
+
+.all-page-cards a {
+  text-decoration: none;
+}
