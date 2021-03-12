@@ -2,7 +2,7 @@
 
 ## Overview
 
-Skillz is a demo of an e-Learning platform that allows for the orginazation of online course in anything from cooking, dancing, home-improvement or courses on new technologies. This is a full stack app that utilizes Ruby on Rails and PostgreSQL for the backend and React for the front.
+Skillz is a demo of an e-Learning platform that allows for the orginazation of online course in anything from cooking, dancing, home-improvement or courses on new technologies. This is a full stack app that utilizes Ruby on Rails and PostgreSQL for the backend and React for the front. I also used this as an opportunity to learn to work with Material UI framework. I used esemeniuc's sign-in template within the Material UI documentation as a guide to get started.
 
 <br>
 
@@ -127,3 +127,5 @@ Going to add a contact form and do either a table for inventory with Material UI
 ## Code Showcase
 
 ## Code Issues & Resolutions
+
+Getting the edit to work with the option select using a required value from a seperate table was the biggest challenge I ran into.
